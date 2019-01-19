@@ -1,0 +1,37 @@
+{
+  "extends": [],
+  "defaultSeverity": "warning",
+  "rules": {
+    "member-ordering": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "max-classes-per-file": false,
+    "no-console": false,
+    "no-bitwise": false,
+    "array-type": false,
+    "jsx-no-lambda": false,
+    "no-empty-interface": false,
+    "prefer-const": [
+      true,
+      {
+        "destructuring": "all"
+      }
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ],
+    "callable-types": false
+  },
+  "linterOptions": {
+    "exclude": [
+      "build/**/*.js",
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  }
+}

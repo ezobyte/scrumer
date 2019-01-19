@@ -1,0 +1,33 @@
+{
+  "name": "scrum-charts",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.0.13",
+    "@material-ui/core": "^3.8.1",
+    "@material-ui/icons": "^3.0.1",
+    "@material-ui/styles": "^3.0.0-alpha.6",
+    "classnames": "^2.2.6",
+    "jss": "^10.0.0-alpha.7",
+    "mobx": "^5.8.0",
+    "mobx-react": "^5.4.3",
+    "mobx-state-tree": "^3.9.0",
+    "react": "next",
+    "react-chartjs-2": "^2.7.4",
+    "react-dom": "next",
+    "react-scripts-ts": "3.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.18",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "typescript": "^3.2.2"
+  }
+}
