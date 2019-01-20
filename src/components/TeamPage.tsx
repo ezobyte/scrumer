@@ -10,7 +10,7 @@ interface ITeamProps {
 }
 
 @observer
-class Team extends React.Component<ITeamProps> {
+class TeamPage extends React.Component<ITeamProps> {
   private addEmptyMember = (role: Role) => {
     this.props.team!.addMember({
       role: role
@@ -57,4 +57,4 @@ class Team extends React.Component<ITeamProps> {
   }
 }
 
-export default Team;
+export default TeamPage;

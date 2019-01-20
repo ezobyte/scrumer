@@ -5,7 +5,8 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/styles";
 import {Observer} from "mobx-react";
 import React, {useContext} from "react";
-import Team from "./Team";
+import SprintsPage from "./SprintsPage";
+import TeamPage from "./TeamPage";
 import {StoreContext} from "..";
 
 interface ITabContainer {
@@ -33,7 +34,7 @@ interface IMenu {
 
 function Menu(props: IMenu) {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(1);
     const store = useContext(StoreContext)
 
   function handleChange(event: React.ChangeEvent<{}>, newValue: number) {
@@ -50,13 +51,13 @@ function Menu(props: IMenu) {
       <AppBar position="static">
         <Tabs value={value} onChange={handleChange}>
           <Tab label="Team Setup" />
-          <Tab label="Item Two" />
+          <Tab label="Sprints" />
           <Tab label="Item Three" />
         </Tabs>
       </AppBar>
-      {value === 0 && <TabContainer><Team team={store.team}/></TabContainer>}
-   {/*   {value === 1 && <TabContainer>Item Two</TabContainer>}
-      {value === 2 && <TabContainer>Item Three</TabContainer>}*/}
+      {value === 0 && <TabContainer><TeamPage team={store.team}/></TabContainer>}
+      {value === 1 && <TabContainer><SprintsPage/></TabContainer>}
+        {/*{value === 2 && <TabContainer>Item Three</TabContainer>}*/}
     </div>
   );
 }

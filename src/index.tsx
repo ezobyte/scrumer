@@ -5,24 +5,18 @@ import App from "./App";
 import ChartData from "./domain/ChartData";
 import "./index.css";
 import registerServiceWorker from "./registerServiceWorker";
-import RootStore, {IRootStoreSnapshotIn, Role} from "./store/model";
-import TT from "./T";
+import { crateRootStoreFromSnapshot } from "./store/initRootStore";
 
- const members = [
-     { role: Role.BA, name: "BA name"},
-     { role: Role.SM, name: "SM name"},
-     { role: Role.Dev }
-     ];
-const rootStoreSnapshotIn: IRootStoreSnapshotIn = {
-    team : {
-        members: members
-    }
-};
-const rootStore = RootStore.create(rootStoreSnapshotIn);
+import T from "./T";
+
+const rootStore = crateRootStoreFromSnapshot();
+
 const chartData = ChartData.getChartData();
 rootStore.chartData.setData(chartData);
+
 export const StoreContext = React.createContext(rootStore);
-window["t"] = new TT(rootStore);
+
+window["t"] = new T(rootStore);
 
 ReactDOM.render(
   <Provider rootStore={rootStore}>

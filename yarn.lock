@@ -50,6 +50,40 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@devexpress/dx-core@1.10.0", "@devexpress/dx-core@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@devexpress/dx-core/-/dx-core-1.10.0.tgz#3fe39d57211aecdf54eed093611e74bf6d1fd1be"
+  integrity sha512-9EZ11t1SIqpgTk+Rn6bwpqyosnC/L7GUTkb7+6R1aw8XmFkPeVtyWBAj/DiCFPouM1nph89Xbl1pxevLL4jKpw==
+
+"@devexpress/dx-grid-core@1.10.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@devexpress/dx-grid-core/-/dx-grid-core-1.10.0.tgz#00f074ee26e693c1bdcc65fe1c31f2aa8f318d3c"
+  integrity sha512-ew0FXp649vU8kHHhRbr+i8gBMdaTiyjNjbRhtqNNYMygc4lUaxfczobr3fztCafVUPViPm9JWCp3XnqHx4VE4Q==
+
+"@devexpress/dx-react-core@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@devexpress/dx-react-core/-/dx-react-core-1.10.0.tgz#decee512278268edc9d0ea9eb21ec0edbf33f0f9"
+  integrity sha512-yzfAaMDfcScXOVS4h1MnmuW+AwSFOcSd0C5MQ921rJdFxqNYbbjj9z2mCpoSEr2iYvE/PwbWMsJIjTTPFlvAIg==
+  dependencies:
+    "@devexpress/dx-core" "1.10.0"
+    prop-types "^15.6.2"
+
+"@devexpress/dx-react-grid-material-ui@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@devexpress/dx-react-grid-material-ui/-/dx-react-grid-material-ui-1.10.0.tgz#9ef9ef56c3f1fab1d14db38072b0f4402a2772ea"
+  integrity sha512-EtxRAe1FQVuQnUQZoORMbLLBDms8P5TIXLdabT5I6+LGb0Dv+SNniXH6iHmhZ6aqmVHSMWtSm0rGBnKb23l4hQ==
+  dependencies:
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+
+"@devexpress/dx-react-grid@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@devexpress/dx-react-grid/-/dx-react-grid-1.10.0.tgz#eea6d0c6b54638731c097f6f01b3442095c873fa"
+  integrity sha512-igmq/25Mt/7PbTlsANjOvE2CZZxZIjPk/i+TBhmL9CqSEUgNxOg+4WO516AsDDDw0ktlUeahpHu5I5Y6HgaflQ==
+  dependencies:
+    "@devexpress/dx-grid-core" "1.10.0"
+    prop-types "^15.6.2"
+
 "@emotion/hash@^0.7.1":
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.7.1.tgz#9833722341379fb7d67f06a4b00ab3c37913da53"
