@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="751062bb-abd5-490d-91f7-40793b9061cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/SprintsPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TableEdit.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Table/BooleanEditor.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Table/TableEdit.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/T.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/T.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Team.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TeamPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/ChartData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/ChartData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/TChart.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/TChart.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/TRootStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/TRootStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/TScrum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/TScrum.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/TTeam.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/TTeam.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/initRootStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/initRootStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SprintsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SprintsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TableEdit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableEdit.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,26 +21,14 @@
     <favorites_list name="scrum-charts" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5997013">
+    <splitter split-orientation="horizontal" split-proportion="0.67662436">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/SprintsPage.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/TeamPage.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+                <state relative-caret-position="476">
+                  <caret line="28" column="80" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -61,34 +37,13 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/TableEdit.tsx">
+            <entry file="file://$PROJECT_DIR$/src/components/Table/TableEdit.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="236">
-                  <caret line="101" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
+                <state relative-caret-position="558">
+                  <caret line="85" column="61" selection-start-line="85" selection-start-column="61" selection-end-line="85" selection-end-column="61" />
                   <folding>
-                    <element signature="e#0#31#0" expanded="true" />
+                    <element signature="e#0#68#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/Table.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-                  <folding>
-                    <element signature="e#0#46#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/node_modules/@devexpress/dx-react-grid/dist/dx-react-grid.d.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="238" column="2" selection-start-line="238" selection-start-column="2" selection-end-line="238" selection-end-column="2" />
                 </state>
               </provider>
             </entry>
@@ -98,9 +53,21 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/shared/components/Input.tsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="205">
+                  <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="35" />
+                  <folding>
+                    <element signature="e#0#46#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/Table.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
+                <state relative-caret-position="62">
                   <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
                   <folding>
                     <element signature="e#0#46#0" expanded="true" />
@@ -116,8 +83,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -142,6 +109,8 @@
       <find>props</find>
       <find>commitChanges</find>
       <find>BooleanTypeProvider</find>
+      <find>Column</find>
+      <find>IBooleanTypeProvider</find>
       <find>columns</find>
     </findStrings>
     <replaceStrings>
@@ -152,6 +121,7 @@
       <replace>PO</replace>
       <replace>Member</replace>
       <replace>Sprints</replace>
+      <replace>IColumn</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -189,9 +159,11 @@
         <option value="$PROJECT_DIR$/src/domain/ChartData.ts" />
         <option value="$PROJECT_DIR$/src/components/TableEdit.ts" />
         <option value="$PROJECT_DIR$/src/components/Menu.tsx" />
-        <option value="$PROJECT_DIR$/src/components/SprintsPage.tsx" />
         <option value="$PROJECT_DIR$/src/components/Table.tsx" />
         <option value="$PROJECT_DIR$/src/components/TableEdit.tsx" />
+        <option value="$PROJECT_DIR$/src/components/SprintsPage.tsx" />
+        <option value="$PROJECT_DIR$/src/components/Table/BooleanEditor.tsx" />
+        <option value="$PROJECT_DIR$/src/components/Table/TableEdit.tsx" />
       </list>
     </option>
   </component>
@@ -202,10 +174,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1431" />
-    <option name="y" value="-46" />
-    <option name="width" value="1191" />
-    <option name="height" value="775" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -225,80 +197,6 @@
             <path>
               <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
               <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@devexpress" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@devexpress" type="462c0819:PsiDirectoryNode" />
-              <item name="dx-react-grid" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@devexpress" type="462c0819:PsiDirectoryNode" />
-              <item name="dx-react-grid" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@material-ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@material-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@material-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="TableCell" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@material-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="Tabs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="mobx-react" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="typescript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="typescript" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -306,6 +204,13 @@
               <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Table" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
@@ -355,6 +260,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\w\scrumCharts\scrum-charts\src\components\Table" />
       <recent name="D:\w\scrumCharts\scrum-charts\src\shared\components" />
       <recent name="D:\w\scrumCharts\scrum-charts" />
     </key>
@@ -407,12 +313,12 @@
       <workItem from="1546570561853" duration="145000" />
       <workItem from="1546570716560" duration="43516000" />
       <workItem from="1547158448974" duration="180000" />
-      <workItem from="1547501574654" duration="40060000" />
+      <workItem from="1547501574654" duration="44846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84905000" />
+    <option name="totallyTimeSpent" value="89691000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -424,24 +330,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1688" y="-108" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6980337" visible="true" weight="0.19240049" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6980337" visible="true" weight="0.19240049" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.30196628" side_tool="true" weight="0.2159228" />
       <window_info id="Favorites" order="3" sideWeight="0.30196628" side_tool="true" weight="0.2159228" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28667414" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28667414" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32922733" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32922733" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32362822" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.38633817" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19148937" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -674,16 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -747,30 +644,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shared/components/Input.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="39" column="84" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="84" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/TableCell/TableCell.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SprintsPage.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,16 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Table.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,12 +689,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/TableEdit.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="101" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
+        <state relative-caret-position="1173">
+          <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SprintsPage.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="80" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/components/Input.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Table.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Table/BooleanEditor.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Table/TableEdit.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="85" column="61" selection-start-line="85" selection-start-column="61" selection-end-line="85" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
           </folding>
         </state>
       </provider>

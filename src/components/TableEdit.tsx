@@ -1,58 +1,16 @@
-import * as React from "react";
-import Paper from "@material-ui/core/Paper";
-import Chip from "@material-ui/core/Chip";
-import Input from "@material-ui/core/Input";
-import Select from "@material-ui/core/Select";
-import MenuItem from "@material-ui/core/MenuItem";
-import { ChangeSet, DataTypeProvider, EditingState } from "@devexpress/dx-react-grid";
+import { ChangeSet, EditingState } from "@devexpress/dx-react-grid";
 import {
   Grid,
   Table,
-  TableHeaderRow,
+  TableEditColumn,
   TableEditRow,
-  TableEditColumn
+  TableHeaderRow
 } from "@devexpress/dx-react-grid-material-ui";
-import ValueFormatterProps = DataTypeProvider.ValueFormatterProps;
+import Paper from "@material-ui/core/Paper";
+import * as React from "react";
+import {BooleanTypeProvider} from "./Table/BooleanEditor";
 
 const getRowId = (row: Sprint) => row.id;
-
-enum BooleanValues {
-  Yes = "Yes",
-  No = "No"
-}
-
-const BooleanFormatter = ({ value }: ValueFormatterProps) => (
-  <Chip label={value ? BooleanValues.Yes : BooleanValues.No} />
-);
-
-interface IBooleanEditor {
-  value: string;
-  onValueChange: (value: boolean) => void;
-}
-
-const BooleanEditor = (props: IBooleanEditor) => (
-  <Select
-    input={<Input />}
-    value={props.value ? BooleanValues.Yes : BooleanValues.No}
-    onChange={event => props.onValueChange(event.target.value === BooleanValues.Yes)}
-    style={{ width: "100%" }}
-  >
-    <MenuItem value={BooleanValues.Yes}>Yes</MenuItem>
-    <MenuItem value={BooleanValues.No}>No</MenuItem>
-  </Select>
-);
-
-interface IBooleanTypeProvider {
-  for: string[];
-}
-
-const BooleanTypeProvider = (props: IBooleanTypeProvider) => (
-  <DataTypeProvider
-    formatterComponent={BooleanFormatter}
-    editorComponent={BooleanEditor}
-    {...props}
-  />
-);
 
 type Column = { name: string; title: string; dataType?: string };
 
@@ -87,26 +45,33 @@ export default class Demo extends React.PureComponent<ITableEdit, ITableEditStat
     this.commitChanges = ({ added, changed, deleted }) => {
       let { rows } = this.state;
       if (added) {
-        const startingAddedId = rows.length > 0 ? rows[rows.length - 1].id + 1 : 0;
-        rows = [
-          ...rows,
-          ...added.map((row, index) => ({
-            id: startingAddedId + index,
-            ...row
-          }))
-        ];
+        rows = this.added(added, rows);
       }
       if (changed) {
-        rows = rows.map((row: Sprint) => (changed[row.id] ? { ...row, ...changed[row.id] } : row));
+        rows = this.changed(changed, rows);
       }
       if (deleted) {
-
         rows = this.deleted(deleted, rows);
       }
       this.setState({ rows });
     };
   }
-  private deleted = (deleted: (string | number)[], rows:Sprint[]) => {
+  private added = (added: any[], rows: Sprint[]) => {
+    const startingAddedId = rows.length > 0 ? rows[rows.length - 1].id + 1 : 0;
+    return [
+      ...rows,
+      ...added.map((row, index) => ({
+        id: startingAddedId + index,
+        ...row
+      }))
+    ];
+  };
+
+  private changed = (changed: {}, rows: Sprint[]) => {
+    return rows.map((row: Sprint) => (changed[row.id] ? { ...row, ...changed[row.id] } : row));
+  };
+
+  private deleted = (deleted: (string | number)[], rows: Sprint[]) => {
     const deletedSet = new Set(deleted);
     return rows.filter((row: Sprint) => !deletedSet.has(row.id));
   };
