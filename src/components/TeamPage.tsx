@@ -3,7 +3,7 @@ import * as React from "react";
 import AddBtn from "../shared/components/AddBtn";
 import Input from "../shared/components/Input";
 import RemoveBtn from "../shared/components/RemoveBtn";
-import { IMember, IMembers, Role } from "../store/model";
+import {IMember, IMembers, Role} from "../store/TTeam";
 
 interface ITeamProps {
   team?: IMembers;
