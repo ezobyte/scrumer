@@ -1,62 +1,46 @@
-import { ChangeSet, EditingState } from "@devexpress/dx-react-grid";
-import {
-  Grid,
-  Table,
-  TableEditColumn,
-  TableEditRow,
-  TableHeaderRow
-} from "@devexpress/dx-react-grid-material-ui";
-import Paper from "@material-ui/core/Paper";
-import * as React from "react";
-import {BooleanTypeProvider} from "./Table/BooleanEditor";
+/*
 
-const getRowId = (row: Sprint) => row.id;
 
-type Column = { name: string; title: string; dataType?: string };
-
-type Sprint = { id: number; name: string; duration: number; dateRange: string };
-
-interface ITableEdit {
-  test?: "lala";
+export interface IRow {
+  id: number;
+  // [key: string]: number | string;
 }
 
-interface ITableEditState {
-  columns: Column[];
+export interface ITableEdit<T> {
+  columns: IColumn[];
   booleanColumns: string[];
-  rows: Sprint[];
+  rows: T[];
+  update: (rows: T[]) => void;
 }
 
-export default class Demo extends React.PureComponent<ITableEdit, ITableEditState> {
+interface ITableEditState<T> {
+  rows: IRow[];
+}
+
+@observer
+export default class TableEdit<T extends IRow> extends React.Component<
+    ITableEdit<T>,
+    ITableEditState<T>
+    > {
   private readonly commitChanges: (changeSet: ChangeSet) => void;
-  constructor(props: ITableEdit) {
+
+  constructor(props: ITableEdit<T>) {
     super(props);
 
-    this.state = {
-      columns: [
-        { name: "id", title: "Number" },
-        { name: "name", title: "Sprint name" },
-        { name: "duration", title: "Duration" },
-        { name: "shipped", title: "Shipped", dataType: "boolean" }
-      ],
-      booleanColumns: ["shipped"],
-      rows: [{ name: "first", duration: 1, dateRange: "1-2", id: 0 } as Sprint]
-    };
-
     this.commitChanges = ({ added, changed, deleted }) => {
-      let { rows } = this.state;
       if (added) {
-        rows = this.added(added, rows);
+        this.props.update(this.added(added, this.props.rows));
       }
       if (changed) {
-        rows = this.changed(changed, rows);
+        this.props.update(this.changed(changed, this.props.rows));
       }
       if (deleted) {
-        rows = this.deleted(deleted, rows);
+        this.props.update(this.deleted(deleted, this.props.rows));
       }
-      this.setState({ rows });
     };
   }
-  private added = (added: any[], rows: Sprint[]) => {
+
+  private added = (added: any[], rows: T[]): T[] => {
     const startingAddedId = rows.length > 0 ? rows[rows.length - 1].id + 1 : 0;
     return [
       ...rows,
@@ -67,29 +51,28 @@ export default class Demo extends React.PureComponent<ITableEdit, ITableEditStat
     ];
   };
 
-  private changed = (changed: {}, rows: Sprint[]) => {
-    return rows.map((row: Sprint) => (changed[row.id] ? { ...row, ...changed[row.id] } : row));
+  private changed = (changed: {}, rows: T[]): T[] => {
+    return rows.map((row: T) => (changed[row.id] ? { ...row, ...changed[row.id] } : row));
   };
 
-  private deleted = (deleted: (string | number)[], rows: Sprint[]) => {
+  private deleted = (deleted: (string | number)[], rows: T[]): T[] => {
     const deletedSet = new Set(deleted);
-    return rows.filter((row: Sprint) => !deletedSet.has(row.id));
+    return rows.filter((row: T) => !deletedSet.has(row.id));
   };
 
   public render() {
-    const { rows, columns, booleanColumns } = this.state;
-
     return (
-      <Paper>
-        <Grid rows={rows} columns={columns} getRowId={getRowId}>
-          <BooleanTypeProvider for={booleanColumns} />
-          <EditingState onCommitChanges={this.commitChanges} defaultEditingRowIds={[0]} />
-          <Table />
-          <TableHeaderRow />
-          <TableEditRow />
-          <TableEditColumn showAddCommand showEditCommand showDeleteCommand />
-        </Grid>
-      </Paper>
+        <Paper>
+          <Grid rows={this.props.rows} columns={this.props.columns} getRowId={getRowId}>
+            <BooleanTypeProvider for={this.props.booleanColumns} />
+            <EditingState onCommitChanges={this.commitChanges} defaultEditingRowIds={[0]} />
+            <Table />
+            <TableHeaderRow />
+            <TableEditRow  />
+            <TableEditColumn showAddCommand showEditCommand showDeleteCommand />
+          </Grid>
+        </Paper>
     );
   }
 }
+*/

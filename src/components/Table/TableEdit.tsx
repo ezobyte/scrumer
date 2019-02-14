@@ -7,11 +7,13 @@ import {
   TableHeaderRow
 } from "@devexpress/dx-react-grid-material-ui";
 import Paper from "@material-ui/core/Paper";
-import {observer} from "mobx-react";
+import { observer } from "mobx-react";
 import * as React from "react";
-import { BooleanTypeProvider } from "./BooleanEditor";
+import { BooleanTypeProvider } from "../../shared/components/Table/BooleanEditor";
 
-const getRowId = (row: any) => row.id;
+const getRowId: <T extends IRow>(row: T) => number = row => row.id;
+
+//const getRowId = (row: IRow) => row.id;
 
 export interface IColumn {
   name: string;
@@ -21,45 +23,44 @@ export interface IColumn {
 
 export interface IRow {
   id: number;
-  [key: string]: number | string;
+  // [key: string]: number | string;
 }
 
-export interface ITableEdit {
+export interface ITableEdit<T> {
   columns: IColumn[];
   booleanColumns: string[];
-  rows: IRow[];
+  rows: T[];
+  update: (rows: T[]) => void;
 }
 
-interface ITableEditState {
+interface ITableEditState<T> {
   rows: IRow[];
 }
 
 @observer
-export default class TableEdit extends React.PureComponent<ITableEdit, ITableEditState> {
+export default class TableEdit<T extends IRow> extends React.Component<
+  ITableEdit<T>,
+  ITableEditState<T>
+> {
   private readonly commitChanges: (changeSet: ChangeSet) => void;
 
-  constructor(props: ITableEdit) {
+  constructor(props: ITableEdit<T>) {
     super(props);
 
-    this.state = {
-      rows: this.props.rows
-    };
-
     this.commitChanges = ({ added, changed, deleted }) => {
-      let { rows } = this.state;
       if (added) {
-        rows = this.added(added, rows);
+        this.props.update(this.added(added, this.props.rows));
       }
       if (changed) {
-        rows = this.changed(changed, rows);
+        this.props.update(this.changed(changed, this.props.rows));
       }
       if (deleted) {
-        rows = this.deleted(deleted, rows);
+        this.props.update(this.deleted(deleted, this.props.rows));
       }
-      this.setState({ rows });
     };
   }
-  private added = (added: any[], rows: any[]) => {
+
+  private added = (added: any[], rows: T[]): T[] => {
     const startingAddedId = rows.length > 0 ? rows[rows.length - 1].id + 1 : 0;
     return [
       ...rows,
@@ -70,26 +71,24 @@ export default class TableEdit extends React.PureComponent<ITableEdit, ITableEdi
     ];
   };
 
-  private changed = (changed: {}, rows: any[]) => {
-    return rows.map((row: any) => (changed[row.id] ? { ...row, ...changed[row.id] } : row));
+  private changed = (changed: {}, rows: T[]): T[] => {
+    return rows.map((row: T) => (changed[row.id] ? { ...row, ...changed[row.id] } : row));
   };
 
-  private deleted = (deleted: (string | number)[], rows: any[]) => {
+  private deleted = (deleted: (string | number)[], rows: T[]): T[] => {
     const deletedSet = new Set(deleted);
-    return rows.filter((row: any) => !deletedSet.has(row.id));
+    return rows.filter((row: T) => !deletedSet.has(row.id));
   };
 
   public render() {
-    const { rows} = this.state;
-
     return (
       <Paper>
-        <Grid rows={rows} columns={this.props.columns} getRowId={getRowId}>
+        <Grid rows={this.props.rows} columns={this.props.columns} getRowId={getRowId}>
           <BooleanTypeProvider for={this.props.booleanColumns} />
           <EditingState onCommitChanges={this.commitChanges} defaultEditingRowIds={[0]} />
           <Table />
           <TableHeaderRow />
-          <TableEditRow />
+          <TableEditRow  />
           <TableEditColumn showAddCommand showEditCommand showDeleteCommand />
         </Grid>
       </Paper>

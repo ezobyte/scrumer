@@ -7,7 +7,7 @@ import "./index.css";
 import registerServiceWorker from "./registerServiceWorker";
 import { crateRootStoreFromSnapshot } from "./store/initRootStore";
 
-import T from "./T";
+import Tst from "./T";
 
 const rootStore = crateRootStoreFromSnapshot();
 
@@ -16,7 +16,7 @@ rootStore.chartData.setData(chartData);
 
 export const StoreContext = React.createContext(rootStore);
 
-window["t"] = new T(rootStore);
+window["t"] = new Tst(rootStore);
 
 ReactDOM.render(
   <Provider rootStore={rootStore}>

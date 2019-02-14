@@ -1,6 +1,6 @@
 import {IRootStore} from "./store/TRootStore";
 
-export default class T {
+export default class Tst {
     constructor(readonly rootStore: IRootStore) {
     }
 }
