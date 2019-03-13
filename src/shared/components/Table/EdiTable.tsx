@@ -1,4 +1,4 @@
-import { MenuItem, Select, Switch, TextField } from "@material-ui/core";
+import { Select, Switch, TextField } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
 import DemoteIcon from "@material-ui/icons/ArrowDropDown";
 import PromoteIcon from "@material-ui/icons/ArrowDropUp";
@@ -7,6 +7,7 @@ import * as React from "react";
 import { ChangeEvent, CSSProperties } from "react";
 import { dataRowStyle, editableTableStyle, headerRowStyle } from "./EdiTableStyles";
 import { IconButtonEdi } from "./IconButtonEdi";
+import { SelectOption } from "./MenuItem";
 
 export enum InputType {
   TextField = "TextField",
@@ -25,12 +26,13 @@ export interface IColumnEdiTable {
 }
 
 export interface IEdiTable<T> {
-  containerStyle?: CSSProperties;
   colSpec: IColumnEdiTable[];
-  reorderable?: boolean;
+  containerStyle?: CSSProperties;
   onChange?: (arg: T[]) => void;
+  reorderable?: boolean;
   rowData: T[];
 }
+
 
 class EdiTable<T> extends React.Component<IEdiTable<T>, IEdiTable<T>> {
   constructor(props: IEdiTable<T>) {
@@ -38,28 +40,14 @@ class EdiTable<T> extends React.Component<IEdiTable<T>, IEdiTable<T>> {
 
     this.state = {
       colSpec: [],
-      reorderable: false,
       rowData: []
     };
-
-    this.onAddRow = this.onAddRow.bind(this);
-    this.onDeleteRow = this.onDeleteRow.bind(this);
-    this.onReorderRow = this.onReorderRow.bind(this);
-  }
-
-  private static createSelectOption(option: string): JSX.Element {
-    return (
-      <MenuItem value={option} key={option}>
-        {option}
-      </MenuItem>
-    );
   }
 
   public componentDidMount() {
     this.setState({
       colSpec: this.props.colSpec,
       onChange: this.props.onChange,
-      reorderable: this.props.reorderable,
       rowData: [...this.props.rowData]
     });
   }
@@ -83,7 +71,7 @@ class EdiTable<T> extends React.Component<IEdiTable<T>, IEdiTable<T>> {
             {col.title}
           </div>
         ))}
-        <div className={"row-cell header-cell action"} style={{ width: "100px", height: 20 }}>
+        <div style={{ width: "100px", height: 20 }}>
           <IconButtonEdi action={"add"} clickEvent={this.onAddRow} muiIcon={<AddIcon />} />
         </div>
       </div>
@@ -150,7 +138,9 @@ class EdiTable<T> extends React.Component<IEdiTable<T>, IEdiTable<T>> {
         onChange={this.onSelectFieldChange(index, column.fieldName)}
       >
         {column!.selectOptions!.map(
-          (option: string): JSX.Element => EdiTable.createSelectOption(option)
+          (option: string, index: number): JSX.Element => (
+            <SelectOption option={option} key={index} />
+          )
         )}
       </Select>
     );
@@ -169,6 +159,7 @@ class EdiTable<T> extends React.Component<IEdiTable<T>, IEdiTable<T>> {
   private renderRowButtons(index: number) {
     const buttons = [
       <IconButtonEdi
+          key={index}
         rowKey={index}
         action={"delete"}
         clickEvent={() => {
@@ -178,10 +169,11 @@ class EdiTable<T> extends React.Component<IEdiTable<T>, IEdiTable<T>> {
       />
     ];
 
-    if (this.state.reorderable) {
+    if (this.props.reorderable) {
       if (index < this.state.rowData.length - 1 && this.state.rowData.length > 1) {
         buttons.push(
           <IconButtonEdi
+            key={index}
             rowKey={index}
             action={"demote"}
             clickEvent={() => {
@@ -208,51 +200,40 @@ class EdiTable<T> extends React.Component<IEdiTable<T>, IEdiTable<T>> {
     return <div>{buttons}</div>;
   }
 
-  private onAddRow() {
-    const self = this;
-    return () => {
-      const tempDataRow = [...self.state.rowData];
+  private onAddRow = () => {
+    console.log("onAddRow Click");
+    const tempDataRow: T[] = [...this.state.rowData];
 
-      // TODO fix any
-      const newRow: any = {};
-      self.state.colSpec.map(
-        (column: IColumnEdiTable) => (newRow[column.fieldName] = column.defaultValue || "")
-      );
+    // TODO fix any
+    const newRow = {};
+    this.state.colSpec.map((column: IColumnEdiTable) => {
+      console.log("column.fieldName", column.fieldName);
+      return (newRow[column.fieldName] = column.defaultValue || "");
+    });
 
-      tempDataRow.push(newRow);
+    tempDataRow.push(newRow as T);
 
-      self.setState({ rowData: tempDataRow });
-      self.state.onChange!(tempDataRow);
-    };
-  }
+    this.setState({ rowData: tempDataRow });
+    this.state.onChange!(tempDataRow);
+  };
 
-  private onDeleteRow(rowId: number) {
-    const self = this;
-    return () => {
-      const tempDataRow = [...self.state.rowData];
+  private onDeleteRow = (rowId: number) => {
+    const tempDataRow = [...this.state.rowData];
+    tempDataRow.splice(rowId, 1);
+    this.setState({ rowData: tempDataRow });
+  };
 
-      tempDataRow.splice(rowId, 1);
+  private onReorderRow = (rowId: number, direction: number) => {
+    const tempDataRow = [...this.state.rowData];
+    const oldIndex = rowId;
+    const newIndex = rowId + direction;
 
-      self.setState({ rowData: tempDataRow });
-      self.state.onChange!(tempDataRow);
-    };
-  }
+    tempDataRow.splice(newIndex, 0, tempDataRow.splice(oldIndex, 1)[0]);
 
-  private onReorderRow(rowId: number, direction: number) {
-    const self = this;
-    return () => {
-      const tempDataRow = [...self.state.rowData];
-      const oldIndex = rowId;
-      const newIndex = rowId + direction;
+    this.setState({ rowData: tempDataRow });
+    this.state.onChange!(tempDataRow);
+  };
 
-      tempDataRow.splice(newIndex, 0, tempDataRow.splice(oldIndex, 1)[0]);
-
-      self.setState({ rowData: tempDataRow });
-      self.state.onChange!(tempDataRow);
-    };
-  }
-
-  // TODO removed const self = this
   private onSwitchFieldChange = (rowId: number, fieldName: string) => {
     return (event: ChangeEvent<HTMLInputElement>, checked: boolean) => {
       this.updateRow(rowId, fieldName, checked);

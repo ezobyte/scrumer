@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="751062bb-abd5-490d-91f7-40793b9061cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/shared/components/Table/EdiTable.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/components/Table/EdiTableStyles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/components/Table/IconButtonEdi.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Usuario.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Usuario.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/components/Table/EdiRow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/components/Table/MenuItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/T.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/T.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SprintsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SprintsPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Table/BooleanEditor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/Table/BooleanEditor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Table/TableEdit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/TableEdit.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TableEdit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableEdit.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/TRootStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/TRootStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/TScrum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/TScrum.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/Table/EdiTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/Table/EdiTable.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,35 +21,14 @@
     <favorites_list name="scrum-charts" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.80156815">
+    <splitter split-orientation="horizontal" split-proportion="0.761658">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/shared/components/Table/EdiTableStyles.ts">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/SprintsPage.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/shared/components/AddBtn.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="8" selection-start-line="8" selection-end-line="8" />
-                  <folding>
-                    <element signature="e#0#40#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/Table.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+                <state relative-caret-position="606">
+                  <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
                   <folding>
                     <element signature="e#0#46#0" expanded="true" />
                   </folding>
@@ -68,76 +37,22 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/SprintsPage.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="842">
-                  <caret line="68" column="2" selection-start-line="68" selection-end-line="68" selection-end-column="39" />
-                  <folding>
-                    <element signature="e#0#44#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/TeamPage.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/package.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/shared/components/Table/EdiTable.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="28">
-                  <caret line="34" selection-start-line="34" selection-end-line="34" />
+                <state relative-caret-position="203">
+                  <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
                   <folding>
-                    <element signature="e#0#84#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/shared/components/Table/IconButtonEdi.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#0#47#0" expanded="true" />
+                    <element signature="e#0#62#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/TextField/TextField.d.ts">
+            <entry file="file://$PROJECT_DIR$/src/shared/components/Table/EdiRow.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="223">
-                  <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/FilledInput/FilledInput.d.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="10" column="14" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="14" />
+                <state relative-caret-position="-714">
+                  <caret line="15" column="19" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -146,85 +61,13 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/shared/components/Table/EdiTableStyles.ts">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/SprintsPage.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/shared/components/AddBtn.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" selection-start-line="16" selection-end-line="16" />
-                  <folding>
-                    <element signature="e#0#40#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/Menu.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+                <state relative-caret-position="-11">
+                  <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
                   <folding>
                     <element signature="e#0#46#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/index.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/store/TScrum.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/shared/components/Table/EdiTable.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="34" selection-start-line="34" selection-end-line="34" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/shared/components/Input.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/TeamPage.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -244,14 +87,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Column</find>
-      <find>IBooleanTypeProvider</find>
-      <find>columns</find>
-      <find>any</find>
-      <find>IRow</find>
-      <find>@inject</find>
-      <find>row</find>
-      <find>dataType</find>
       <find>IRow[]</find>
       <find>export</find>
       <find>constr</find>
@@ -272,8 +107,16 @@
       <find>header-row</find>
       <find>/*     style={{ width: column.width }}*/</find>
       <find>renderInputField</find>
-      <find>EdiTable</find>
       <find>onAddRow</find>
+      <find>reorderable</find>
+      <find>promote</find>
+      <find>onDeleteRow</find>
+      <find>.colSpec.map</find>
+      <find>EdiTable</find>
+      <find>RowEdi</find>
+      <find>colSpec</find>
+      <find>IconButtonEdi</find>
+      <find>IRowEdiTable</find>
     </findStrings>
     <replaceStrings>
       <replace>TMember</replace>
@@ -288,6 +131,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ezobyte &lt;ezobyte@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -327,10 +175,12 @@
         <option value="$PROJECT_DIR$/src/components/TableEdit.tsx" />
         <option value="$PROJECT_DIR$/src/shared/components/AddBtn.tsx" />
         <option value="$PROJECT_DIR$/src/shared/components/Table/EdiTable.ts" />
-        <option value="$PROJECT_DIR$/src/components/SprintsPage.tsx" />
         <option value="$PROJECT_DIR$/src/shared/components/IconButtonEdi.tsx" />
-        <option value="$PROJECT_DIR$/src/shared/components/Table/EdiTable.tsx" />
         <option value="$PROJECT_DIR$/src/shared/components/Table/IconButtonEdi.tsx" />
+        <option value="$PROJECT_DIR$/src/shared/components/Table/MenuItem.tsx" />
+        <option value="$PROJECT_DIR$/src/shared/components/Table/EdiRow.tsx" />
+        <option value="$PROJECT_DIR$/src/shared/components/Table/EdiTable.tsx" />
+        <option value="$PROJECT_DIR$/src/components/SprintsPage.tsx" />
       </list>
     </option>
   </component>
@@ -341,8 +191,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1650" />
-    <option name="y" value="-50" />
+    <option name="x" value="-173" />
+    <option name="y" value="55" />
     <option name="width" value="1696" />
     <option name="height" value="1026" />
   </component>
@@ -354,7 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -490,17 +339,24 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Table" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="scrum-charts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrum-charts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pg" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../radio" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="D:\w\scrumCharts\scrum-charts\node_modules\tslint" />
@@ -573,12 +429,22 @@
       <workItem from="1548099442810" duration="195000" />
       <workItem from="1548099706042" duration="44365000" />
       <workItem from="1549575578678" duration="2572000" />
-      <workItem from="1550092003553" duration="8206000" />
+      <workItem from="1550092003553" duration="14839000" />
+      <workItem from="1550523209712" duration="2075000" />
+      <workItem from="1552513944854" duration="5221000" />
     </task>
+    <task id="LOCAL-00001" summary="fixes, improvements">
+      <created>1550103723482</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550103723482</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149142000" />
+    <option name="totallyTimeSpent" value="163071000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -590,22 +456,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1650" y="-50" width="1696" height="1026" extended-state="0" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6915584" visible="true" weight="0.18516284" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.690407" visible="true" weight="0.18516284" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.30844155" side_tool="true" weight="0.18516284" />
+      <window_info id="npm" order="2" sideWeight="0.30959302" side_tool="true" visible="true" weight="0.18516284" />
       <window_info id="Favorites" order="3" sideWeight="0.3057111" side_tool="true" weight="0.18516284" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49939686" visible="true" weight="0.083986565" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49939686" visible="true" weight="0.22956327" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32922733" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32922733" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.033594623" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32362822" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50060314" side_tool="true" weight="0.37849945" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.19148937" />
@@ -638,6 +504,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixes, improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes, improvements" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -654,16 +524,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/styles/withStyles.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/styles/createStyles.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shared/withRoot.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -945,10 +805,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/components/Table/MenuItem.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/components/Table/IconButtonEdi.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/TextField/TextField.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/FilledInput/FilledInput.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/components/Table/EdiTableStyles.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/shared/components/AddBtn.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="221">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -975,13 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/TScrum.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shared/components/Input.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -999,53 +893,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shared/components/Table/EdiTableStyles.ts">
+    <entry file="file://$PROJECT_DIR$/src/store/TScrum.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        <state relative-caret-position="612">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/TextField/TextField.d.ts">
+    <entry file="file://$PROJECT_DIR$/src/shared/components/Table/EdiRow.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/FilledInput/FilledInput.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SprintsPage.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="842">
-          <caret line="68" column="2" selection-start-line="68" selection-end-line="68" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-714">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shared/components/Table/EdiTable.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="203">
+          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
           <folding>
-            <element signature="e#0#84#0" expanded="true" />
+            <element signature="e#0#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shared/components/Table/IconButtonEdi.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/SprintsPage.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        <state relative-caret-position="606">
+          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
